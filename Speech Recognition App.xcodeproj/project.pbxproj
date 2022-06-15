@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18FE663C35ABB108EBE491D9 /* Pods_Speech_Recognition_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D344DBAC58A18C972AA375 /* Pods_Speech_Recognition_App.framework */; };
 		86F69AC72859F56300CC38DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F69AC62859F56300CC38DC /* AppDelegate.swift */; };
 		86F69AC92859F56300CC38DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F69AC82859F56300CC38DC /* SceneDelegate.swift */; };
 		86F69ACB2859F56300CC38DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F69ACA2859F56300CC38DC /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35D344DBAC58A18C972AA375 /* Pods_Speech_Recognition_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speech_Recognition_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		402B1FD861BC3DE567A72C3A /* Pods-Speech Recognition App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speech Recognition App.release.xcconfig"; path = "Target Support Files/Pods-Speech Recognition App/Pods-Speech Recognition App.release.xcconfig"; sourceTree = "<group>"; };
 		86F69AC32859F56300CC38DC /* Speech Recognition App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speech Recognition App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F69AC62859F56300CC38DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86F69AC82859F56300CC38DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		86F69ACF2859F56600CC38DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86F69AD22859F56600CC38DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86F69AD42859F56600CC38DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76042D37F4CDCA5209D3243 /* Pods-Speech Recognition App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speech Recognition App.debug.xcconfig"; path = "Target Support Files/Pods-Speech Recognition App/Pods-Speech Recognition App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FE663C35ABB108EBE491D9 /* Pods_Speech_Recognition_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8324F6CA0517EA7CB90C3369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35D344DBAC58A18C972AA375 /* Pods_Speech_Recognition_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86F69ABA2859F56300CC38DC = {
 			isa = PBXGroup;
 			children = (
 				86F69AC52859F56300CC38DC /* Speech Recognition App */,
 				86F69AC42859F56300CC38DC /* Products */,
+				FD62480722A496B509D13E91 /* Pods */,
+				8324F6CA0517EA7CB90C3369 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Speech Recognition App";
 			sourceTree = "<group>";
 		};
+		FD62480722A496B509D13E91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B76042D37F4CDCA5209D3243 /* Pods-Speech Recognition App.debug.xcconfig */,
+				402B1FD861BC3DE567A72C3A /* Pods-Speech Recognition App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86F69AD72859F56600CC38DC /* Build configuration list for PBXNativeTarget "Speech Recognition App" */;
 			buildPhases = (
+				3FDA0EC157B218D7138F10FB /* [CP] Check Pods Manifest.lock */,
 				86F69ABF2859F56300CC38DC /* Sources */,
 				86F69AC02859F56300CC38DC /* Frameworks */,
 				86F69AC12859F56300CC38DC /* Resources */,
+				051D51D2A3504F1A9DE5C9D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051D51D2A3504F1A9DE5C9D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Speech Recognition App/Pods-Speech Recognition App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Speech Recognition App/Pods-Speech Recognition App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Speech Recognition App/Pods-Speech Recognition App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FDA0EC157B218D7138F10FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Speech Recognition App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86F69ABF2859F56300CC38DC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		86F69AD82859F56600CC38DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76042D37F4CDCA5209D3243 /* Pods-Speech Recognition App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		86F69AD92859F56600CC38DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402B1FD861BC3DE567A72C3A /* Pods-Speech Recognition App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
